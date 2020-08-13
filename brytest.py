@@ -21,7 +21,7 @@ def inputnext(arg, next):
     #t.start()
 """
     
-class inputnext:
+class InputNext:
     def __init__(self, prompt, next):
        self.prompt = prompt
        self.next = next
@@ -40,9 +40,9 @@ class inputnext:
 
 def handlein_1(inp):
     print("we received input 1: ", inp)
-    inputnext("give me input (2)", handlein_2)
+    InputNext("give me input (2)", handlein_2)
     
 def handlein_2(inp):
     print("we received input 2: ", inp)
         
-inputnext("give me input (1)", handlein_1)
+InputNext("give me input (1)", handlein_1)
