@@ -23,4 +23,20 @@ def handlein_1(inp):
 def handlein_2(inp):
     print("we received input 2: ", inp)
         
-InputNext("give me input (1)", handlein_1)
+#InputNext("give me input (1)", handlein_1)
+
+thenumber = 44
+
+def process_guess(guess):
+    if int(guess) == thenumber:
+        print("You nailed it!")
+        return
+    elif int(guess) > thenumber:
+        print("That's too high!")
+    else:
+        print("That's too low!")    
+    InputNext("Try another: ", process_guess)
+
+
+InputNext("I am thinking of a number between 1 and 50. Can you guess it?", process_guess)
+
